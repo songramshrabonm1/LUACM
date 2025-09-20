@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:contentPadding="10dp">
+
+<!--    app:cardBackgroundColor="#360B53"-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/allText"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/ModuleText"
+                android:text="Module - 1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TopicName"
+                android:text="Video Title"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/ModuleText"
+                android:layout_marginTop="5dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TodayTotalVideo"
+                android:text="Total Video"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_below="@+id/TopicName"
+                android:layout_marginTop="25dp"></TextView>
+
+
+            <TextView
+                android:id="@+id/insctructorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TopicName"
+                android:layout_marginTop="25dp"
+                android:text="Insctructor Name"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:textSize="12sp"
+                android:textStyle="normal"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/icons"
+            android:layout_alignParentEnd="true"
+            >
+<!--            android:layout_toEndOf="@+id/allText"-->
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/deleteIcon"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_delete_24"
+                ></ImageButton>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/icons"
+            >
+            <!--            android:layout_toEndOf="@+id/allText"-->
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/editIcon"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_edit_24"
+                ></ImageButton>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

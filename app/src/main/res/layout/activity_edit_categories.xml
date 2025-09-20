@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.problemsloving.ratingWise.EditCategories">
+
+<!--    android:background="#141526"-->
+
+
+
+    <ImageButton
+        android:id="@+id/BackButtonRatingUpload"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#141526"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+
+        android:visibility="gone"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+    <TextView
+        android:id="@+id/choseSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Platform Name"
+        android:textColor="#1B4866"
+        android:textAllCaps="true"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/images"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_______________________________________________________"
+        android:textColor="#1B4866"
+        android:textAlignment="center"
+        android:id="@+id/NicherLine"
+        android:visibility="gone"
+        android:layout_below="@+id/choseSection"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Scrolling"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/NicherLine">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/ratinggs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Write Here..."
+                    android:textColorHint="@color/black"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            ratingg-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rating"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/vjudgelink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Vjudge Link"
+                    android:textColorHint="@color/black"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/VjudgePasswordSet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/SelectRating"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/Vjudge_PasswordSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Vjudge Password"
+                    android:textColorHint="@color/black"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UpdateddRating"
+                android:text="Updated"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#115B8D"
+                android:background="@drawable/shape_button"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

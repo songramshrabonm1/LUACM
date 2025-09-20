@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProblemSolving">
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#141526"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:visibility="gone"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_10" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/images"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/gradient_shape2"
+                >
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <!-- Right Section (Form & Button) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_shape2"
+            android:padding="20dp">
+
+<!--            <ScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                >-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:padding="10dp">-->
+<!--                    -->
+<!--                    -->
+
+
+
+<!--                </LinearLayout>-->
+<!--            </ScrollView>-->
+
+
+
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/images"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:padding="10dp">
+
+                    <!-- Left Side Content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:elevation="4dp"
+                            android:background="@drawable/gradient_create"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/course_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Category Wise Problem set"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/Categorywist"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/course_title"
+                                android:text="Enter"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#115B8D"
+                                android:background="@drawable/shape_button" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gradient_create"
+                            android:elevation="4dp"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/course_titletwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rating Wise Problem Set"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/RatingWise"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/course_titletwo"
+                                android:text="Enter"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#115B8D"
+                                android:background="@drawable/shape_button" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!-- Right Side Content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@drawable/gradient_create"
+                            android:elevation="4dp"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/course_titlethree"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lu Acm Set Problem"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/LuAcm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/course_titlethree"
+                                android:text="Enter"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#115B8D"
+                                android:background="@drawable/shape_button" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/gradient_create"
+                            android:elevation="4dp"
+                            android:padding="15dp">
+
+                            <TextView
+                                android:id="@+id/course_titleFour"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Another Problem Set"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textAlignment="center"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/AnotherBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/course_titleFour"
+                                android:text="Enter"
+                                android:textColor="@android:color/white"
+                                android:backgroundTint="#115B8D"
+                                android:background="@drawable/shape_button" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.pdfActivity">
+
+
+    <ImageButton
+        android:id="@+id/back_btnn"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#141526"
+        android:contentDescription="backButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+
+    <ImageButton
+        android:id="@+id/attach_Btn"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:contentDescription="attachButton"
+        android:src="@drawable/baseline_attach_file_24" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuestionText"
+        android:layout_marginTop="105dp"
+        android:text="Question Add"
+        android:textSize="28dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/Scrolling"
+        android:layout_below="@+id/images"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/titleTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/QuestionText"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/book_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Course Teacher Name"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--    android:hint="Book Title"-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionTil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleTil"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/description_Et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Batch"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--    android:hint="Description Title"-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Examination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriptionTil"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/FinalORMid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Semester Examination:Final / Mid"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Examination"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/FallSummer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="SessionName"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Session"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/years"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Year"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Year"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/textview_background"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false">
+
+                <EditText
+                    android:id="@+id/BookCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:hint="Question"
+                    android:inputType="textMultiLine|textCapCharacters"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:layout_below="@+id/Scrolling"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#115B8D"
+        android:background="@drawable/shape_button"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

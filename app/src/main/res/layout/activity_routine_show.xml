@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.routinepart.RoutineShow">
+
+
+<!--    android:background="#141526"-->
+
+
+    <ImageButton
+        android:id="@+id/backBtnnc"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="backButton"
+        android:padding="5dp"
+        android:src="@drawable/baseline_arrow_back_24"
+></ImageButton>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+    <TextView
+        android:id="@+id/TextViewEditBatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Batch Name- "
+        android:textColor="#1B4866"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:layout_below="@+id/backBtnnc"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_______________________________________________________"
+        android:textColor="#1B4866"
+        android:id="@+id/lineeeee"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_below="@+id/TextViewEditBatch"></TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrolling"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TextViewEditBatch"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:id="@+id/imageViewss"
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

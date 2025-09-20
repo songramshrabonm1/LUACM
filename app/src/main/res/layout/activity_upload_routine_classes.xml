@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.routinepart.UploadRoutineClasses">
+
+
+
+    <ImageButton
+        android:id="@+id/backBtnnc"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#141526"
+        android:contentDescription="backButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+    <TextView
+        android:id="@+id/TextViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload  Class Time"
+        android:textColor="#1B4866"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_below="@+id/backBtnnc"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollingfirest"
+        android:layout_below="@+id/images">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:id="@+id/scrolling"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/images"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearly"
+                    android:orientation="vertical"
+                    >
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Day"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/Days"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select Day \n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/Day"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/Timeess"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select Time \n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/clas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/Day"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/ClassRoom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select class Room\n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Batch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/Day"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/SelectBatch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select Batch\n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Section"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/Day"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/SelectSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select Section\n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Department"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/Day"
+                        app:boxBackgroundMode="none"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false">
+
+                        <TextView
+                            android:id="@+id/SelectDepartment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:text="Select Section\n"
+                            android:textColor="#BCA2A2"
+                            android:paddingTop="15dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="22sp"></TextView>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/secondScroll"
+                android:layout_below="@+id/scrolling"
+                android:layout_marginTop="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/InnerLinnear"
+                    android:orientation="vertical">
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/uploadBlockClass"
+                        android:text="Upload Block Class"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#115B8D"
+                        android:background="@drawable/shape_button"
+                        ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ResetClasFree"
+                        android:text="Reset Class ClassRoom All Free"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/uploadBlockClass"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="#115B8D"
+                        android:background="@drawable/shape_button"
+                        ></androidx.appcompat.widget.AppCompatButton>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

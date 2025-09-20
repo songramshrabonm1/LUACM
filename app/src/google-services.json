@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "590030176162",
+    "firebase_url": "https://lu-pdf-default-rtdb.firebaseio.com",
+    "project_id": "lu-pdf",
+    "storage_bucket": "lu-pdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590030176162:android:a5f2dc9354e5199aabfcfb",
+        "android_client_info": {
+          "package_name": "com.example.bookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk2YBi2E-5ACUvlHqy-dK9GgKw2p_pE3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590030176162:android:243d56320af74d04abfcfb",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk2YBi2E-5ACUvlHqy-dK9GgKw2p_pE3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

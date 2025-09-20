@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.problemsloving.ratingWise.RatingWiseProblemHome">
+
+<!--    android:background="#141526"-->
+
+
+    <ImageButton
+        android:id="@+id/BackButtonRating"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#141526"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:visibility="gone"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+    <TextView
+        android:id="@+id/choseSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating Wise Problem Solving"
+        android:textColor="#1B4866"
+        android:textAllCaps="true"
+        android:textSize="34dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/images"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="_______________________________________________________"
+        android:textColor="#1B4866"
+        android:textAlignment="center"
+        android:id="@+id/NicherLine"
+        android:visibility="gone"
+        android:layout_below="@+id/choseSection"></TextView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/NicherLine"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- First RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:background="@drawable/gradient_create"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/img_8"
+                    />
+
+                <TextView
+                    android:id="@+id/course_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_image"
+                    android:layout_marginTop="8dp"
+                    android:text="Codeforces "
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/codeforcesRating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_title"
+                    android:layout_marginTop="12dp"
+                    android:text="Enter"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp"
+                    android:backgroundTint="#115B8D"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+
+            <!-- Second RelativeLayout (Uncomment this part when ready) -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/gradient_create"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_imagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/img_13"
+                    />
+
+                <TextView
+                    android:id="@+id/course_titletwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_imagetwo"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center"
+                    android:text="Codechef"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/codechefUploadedVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_titletwo"
+                    android:layout_marginTop="12dp"
+                    android:text="Enter"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#115B8D"
+
+                    android:padding="8dp"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

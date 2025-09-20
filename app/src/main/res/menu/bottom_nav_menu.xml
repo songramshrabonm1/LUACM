@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:icon="@drawable/video_tutorial"
+        />
+    <item
+        android:id="@+id/navProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:icon="@drawable/brain_circuitt"
+        />
+    <item
+        android:id="@+id/navRoutine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:icon="@drawable/classroom_"
+        />
+    <item
+        android:id="@+id/nvaQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:icon="@drawable/question_book"
+        />
+    <item
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title=""
+        android:icon="@drawable/baseline_account_box_24"
+        />
+
+</menu>

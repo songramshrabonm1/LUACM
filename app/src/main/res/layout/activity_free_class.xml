@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.routinepart.FreeClassRoomHome">
+
+
+
+    <ImageButton
+        android:id="@+id/BackButtonControllingSectin"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#141526"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:visibility="visible"
+        android:textStyle="bold|italic" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texts"
+        android:text="Free Class Finding"
+        android:textAlignment="center"
+        android:layout_below="@+id/BackButtonControllingSectin"
+        android:layout_centerHorizontal="true"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        android:layout_marginTop="170dp"
+        android:textColor="#1B4866"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___________________________"
+        android:textColor="#1B4866"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/texts"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_below="@+id/images"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical">
+
+    <!-- First RelativeLayout -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/gradient_create"
+                android:elevation="4dp"
+                android:id="@+id/classTimeBox"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/CrAddAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Upload Class Time"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/uploadClassTimeEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/CrAddAdmin"
+                    android:layout_marginTop="32dp"
+                    android:text="Enter"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#115B8D"
+                    android:padding="1dp"
+                    android:background="@drawable/shape_button" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/gradient_create"
+                android:elevation="4dp"
+                android:padding="15dp"
+                android:id="@+id/searchingFreeClass"
+                >
+
+
+                <TextView
+                    android:id="@+id/course_titletwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Searching Free Class"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/freeClassBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_titletwo"
+                    android:layout_marginTop="32dp"
+                    android:text="Enter"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#115B8D"
+                    android:padding="1dp"
+                    android:background="@drawable/shape_button" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/gradient_create"
+                android:elevation="4dp"
+                android:id="@+id/blockClass"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:id="@+id/BlockClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="See Block Class"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/blockClassBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/BlockClass"
+                    android:layout_marginTop="32dp"
+                    android:text="Enter"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#115B8D"
+                    android:padding="1dp"
+                    android:background="@drawable/shape_button" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

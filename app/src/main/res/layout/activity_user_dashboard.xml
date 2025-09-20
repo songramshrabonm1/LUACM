@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboarduser.UserDashboardActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:visibility="gone"
+        android:textStyle="bold|italic"></ImageButton>
+
+
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="AdminDashBoard"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/emailidd"
+        android:layout_width="237dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/textTv"
+        android:layout_centerHorizontal="true"
+        android:text="emaill"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textStyle="bold"></TextView>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-250dp"
+        android:background="@drawable/gradient_shape2"
+        >
+    </View>
+
+    <ImageButton
+        android:id="@+id/logOutUser"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="logout"
+        android:src="@drawable/baseline_crisis_alert_24"
+        android:text="logOut"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"></ImageButton>
+
+
+
+    <EditText
+        android:id="@+id/search_Et"
+        android:layout_width="402dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/images"
+        android:layout_centerVertical="true"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/card_shape"
+
+        ></EditText>
+
+
+
+    <!-- এখানে রিসকাইলারভিউ দেখানোর জন্যে আমরা row_category টা  বানিয়েছি।  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_user_category"
+        android:layout_below="@+id/search_Et"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"></androidx.recyclerview.widget.RecyclerView>
+<!--    android:layout_above="@+id/addcategoryBtn"-->
+
+
+</RelativeLayout>

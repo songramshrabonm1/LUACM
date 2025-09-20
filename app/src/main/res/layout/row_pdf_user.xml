@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp"
+
+
+    >
+    <!--    android:background="#141526"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="5dp"
+            android:background="#19A09A9A"
+
+            >
+
+
+            <com.joanzapata.pdfview.PDFView
+                android:id="@+id/pdfview"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                ></ProgressBar>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/SemesterExamination"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:layout_marginTop="15dp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:text="Semester Final Examination"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/Session"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SemesterExamination"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:text="Fall-2024"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/CourseTeacherName"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Session"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/white"
+            android:text="CourseTeacherName"></TextView>
+
+        <TextView
+            android:id="@+id/Batch"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CourseTeacherName"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/white"
+            android:text="Batch- 58"></TextView>
+
+        <TextView
+            android:id="@+id/showPdf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:text="Show Pdf "
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

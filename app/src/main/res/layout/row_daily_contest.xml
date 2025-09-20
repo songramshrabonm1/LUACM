@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="6dp"
+
+
+    >
+    <!--    android:background="#141526"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="#19A09A9A"
+
+            >
+
+            <ImageView
+                android:id="@+id/ProbleSolvingPlatformImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+
+                >
+
+            </ImageView>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                ></ProgressBar>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/constestname"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:text="Contest Name"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/PlatformName"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/constestname"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:text="Platform Name"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/InstructorNames"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PlatformName"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/white"
+            android:text="Instructor Name"></TextView>
+
+        <TextView
+            android:id="@+id/DeivisionName"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/InstructorNames"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/white"
+            android:text="Division Name (Div - 1 ) "></TextView>
+
+
+        <TextView
+            android:id="@+id/totalVideo"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="13dp"
+
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="Total Video - 1 "
+            android:textColor="@color/white"></TextView>
+
+        <ImageButton
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            ></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editIcon"
+            android:src="@drawable/baseline_edit_24"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/deleteIcon"></ImageButton>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

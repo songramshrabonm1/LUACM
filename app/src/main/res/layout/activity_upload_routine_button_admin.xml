@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.routinepart.UploadRoutineButtonAdmin">
+
+
+<!--    android:background="#141526"-->
+
+    <ImageButton
+        android:id="@+id/backBtnnc"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="backButton"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+
+    <TextView
+        android:id="@+id/TextViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Routine"
+        android:textColor="#1B4866"
+        android:textStyle="bold"
+        android:textSize="38sp"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/backBtnnc"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        >
+
+    </TextView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Scrolling"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/images">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundMode="none"
+                android:background="@drawable/textview_background"
+                app:hintEnabled="false">
+
+                <TextView
+                    android:id="@+id/Batch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:text="Select Batch \n"
+                    android:textColor="#BCA2A2"
+                    android:paddingTop="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="22sp"></TextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundMode="none"
+                android:background="@drawable/textview_background"
+                app:hintEnabled="false">
+
+                <TextView
+                    android:id="@+id/sections"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:text="Select Section \n"
+                    android:textColor="#BCA2A2"
+                    android:paddingTop="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="22sp"></TextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="30dp"
+                app:boxBackgroundMode="none"
+                android:background="@drawable/textview_background"
+                app:hintEnabled="false">
+
+                <TextView
+                    android:id="@+id/PickImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:text="Pick Routine Image \n"
+                    android:textColor="#BCA2A2"
+                    android:paddingTop="15dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textSize="22sp"></TextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UploadRoutineImage"
+                android:text="Upload Routine"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Time"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#115B8D"
+                android:background="@drawable/shape_button"
+                ></androidx.appcompat.widget.AppCompatButton>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UploadedimagessRoutine"
+                ></ImageView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

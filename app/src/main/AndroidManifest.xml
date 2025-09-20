@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- internet permission দিয়ে দিয়েছি কারণ ফাইয়ার বেএস থেকে ডাটা লোড করেছি। -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".dashboardadmin.routinepart.SearchingBlockClassRoom"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.SeeBlockClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.FreeClassRoomHome"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.UploadRoutineClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.ShowFreeClass"
+            android:exported="false" />
+        <activity
+            android:name=".register.AfterRegLogin"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.addAdminCr.EditInformation"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.addAdminCr.EditInfo" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.addAdminCr.showInformation"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.addAdminCr.AddingSection"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.addAdminCr.SetAdminCrHome"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.problemsloving.ratingWise.EditCategories"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.problemsloving.ratingWise.UploadRatingSet"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.problemsloving.ratingWise.createRatingWise"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.problemsloving.ratingWise.RatingWiseProblemHome"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.problemsloving.luAcm.LuAcmHome" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".dashboardadmin.problemsloving.categoryWise.categoryWiseProblem" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.problemsloving.ProblemSolvingMainHome"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.RoutineShow"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.UploadRoutineButtonAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.UploadRoutine"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.routinepart.SearchingFreeClassRoom"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.routinepart.FindFreeClassRoom" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualModuleClassesEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualModuleClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualUploadCategory"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.DailyModuleClassesEdit"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.DailyContestModelClasses" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.DailyContestModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.DailycontestModuleClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.ProblemSolvingUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.ProblemSolvingUploadCategory"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgoUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgoModuleClassesEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgoModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgoModuleClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgorithmUploadCategory"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.DsModuleClassesEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.DsModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.DsModuleClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.DsUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.DsprogrammingUploadCategory"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CppprogrammingModuleClassesEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CppprogrammingModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CppproggramingModuleClass"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CppProgrammingUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CpluseprogrammingUploadCategory"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CprogrammingModuleClassesEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CprogrammingModuleClasses"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CprogrammingUploadCategoryEdit"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CproggramingModuleClass"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.ModelCModuleEdit" this part maybe deleted thaty why it's show red color -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CprogrammingUploadCategory"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgorithmCourse"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Datastructure.Ds"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CPlusProgramming"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Cprogramming"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Conceptual.ConceptualSessionAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.DailyContest.probleSolvingUpload"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.MainHomeCourseSection"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.videoUploadAdmin.VideoHomePart"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.videoSection.VideoSection"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.AdminDashboardHome"
+            android:exported="false" />
+        <activity
+            android:name=".dashboarduser.UserDashboarHome"
+            android:exported="false" />
+        <activity
+            android:name=".dashboarduser.PdfListUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.PdfEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.PdfListAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.pdfActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".AdapterCategory" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".dashboardadmin.CategoryAddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboardadmin.DashboardAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".dashboarduser.UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScrenn"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <meta-data -->
+        <!-- android:name="CLOUDINARY_URL" -->
+        <!-- android:value="CLOUDINARY_URL=cloudinary://<432285265761625>:<rV-bKS6ZKwEsazAuuol1mb2sv0Y>@db3f58uvh"></meta-data> -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

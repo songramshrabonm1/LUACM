@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.videoSection.videoUploadAdmin.MainHomeCourseSection">
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:visibility="gone"
+        android:textStyle="bold|italic" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+
+
+
+
+    <TextView
+        android:id="@+id/choseSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chose Your Section"
+        android:textColor="#1B4866"
+        android:textAllCaps="true"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:layout_below="@+id/BackButton"
+        android:layout_centerInParent="true" />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/images"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- First RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_shape_tranparent"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_2"
+                    />
+
+                <TextView
+                    android:id="@+id/course_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_image"
+                    android:layout_marginTop="8dp"
+                    android:text="C Programming "
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cUploadedVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_title"
+                    android:layout_marginTop="12dp"
+                    android:text="Upload Course"
+                    android:textColor="@android:color/white"
+                    android:padding="8dp"
+                    android:backgroundTint="#1B4866"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+
+            <!-- Second RelativeLayout (Uncomment this part when ready) -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_shape_tranparent"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_imagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img"
+                    />
+
+                <TextView
+                    android:id="@+id/course_titletwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_imagetwo"
+                    android:layout_marginTop="8dp"
+                    android:text="C++ Programming"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cplusUploadedVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_titletwo"
+                    android:layout_marginTop="12dp"
+                    android:text="Upload Course"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#1B4866"
+                    android:padding="8dp"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_shape_tranparent"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_imageThreeCodechef"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_3"
+                    />
+                <TextView
+                    android:id="@+id/course_titlethree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_imageThreeCodechef"
+                    android:layout_marginTop="8dp"
+                    android:text="Data Structure"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/DataStructureBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_titlethree"
+                    android:layout_marginTop="12dp"
+                    android:text="Upload Course"
+                    android:backgroundTint="#1B4866"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/btn_shape_tranparent"
+                android:elevation="4dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/course_imageFourLeetCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_4"
+                    />
+
+                <TextView
+                    android:id="@+id/course_titleFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_imageFourLeetCode"
+                    android:layout_marginTop="8dp"
+                    android:text="Algorithm"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/algoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/course_titleFour"
+                    android:layout_marginTop="12dp"
+                    android:text="Uploaded Course"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#1B4866"
+                    android:background="@drawable/shape_button" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

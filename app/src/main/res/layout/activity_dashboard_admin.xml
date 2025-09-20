@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardadmin.DashboardAdmin"
+    >
+<!--    tools:context=".DashboardAdmin"-->
+
+
+
+    <ImageButton
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logOut"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:src="@drawable/baseline_crisis_alert_24"
+        android:contentDescription="logout"
+        android:backgroundTint="#141526"
+        android:layout_marginLeft="70dp"
+        android:visibility="gone"
+        android:textStyle="bold|italic"></ImageButton>
+
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="logOut"
+        android:textStyle="bold|italic"></ImageButton>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:src="@drawable/img_10"></ImageView>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+    </View>
+
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="AdminDashBoard"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textStyle="bold"></TextView>
+
+
+    <TextView
+        android:id="@+id/emailidd"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTv"
+        android:layout_centerHorizontal="true"
+        android:text="emaill"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/search_Et"
+        android:layout_width="402dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/BackButton"
+        android:layout_centerVertical="true"
+        android:hint="Search"
+        android:padding="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginHorizontal="25dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/card_shape"
+        ></EditText>
+
+
+    <!--    tools:listitem="@layout/row_category"-->
+
+<!-- এখানে রিসকাইলারভিউ দেখানোর জন্যে আমরা row_category টা  বানিয়েছি।  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row_category"
+        android:layout_above="@+id/addcategoryBtn"
+        android:layout_below="@+id/search_Et"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addcategoryBtn"
+        android:text="Add Category"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#115B8D"
+        android:background="@drawable/shape_button"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+
+<!--    <Button-->
+<!--        android:id="@+id/addpdffb"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:backgroundTint="#073D6D"-->
+<!--        android:text="pdf"></Button>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addpdffb"
+        android:text="Add Pdf"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="#115B8D"
+        android:layout_marginEnd="4dp"
+        android:padding="5dp"
+        android:background="@drawable/shape_button"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+
+</RelativeLayout>

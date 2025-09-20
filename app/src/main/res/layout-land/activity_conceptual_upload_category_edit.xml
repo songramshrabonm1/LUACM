@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_10" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/images"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/titleTil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/TextViewEdit"
+                        android:background="@drawable/textview_background"
+                        app:hintEnabled="false"
+                        app:boxBackgroundMode="none"
+                        >
+
+                        <EditText
+                            android:id="@+id/moduleet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Topic Name "
+                            android:inputType="textMultiLine|textCapCharacters"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/gradient_shape2"
+                >
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <!-- Right Section (Form & Button) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_shape2"
+            android:padding="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/descriptionTil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleTil"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/textview_background"
+                        app:boxBackgroundMode="none"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/videoTitle_Et"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Video Title"
+                            android:inputType="textMultiLine|textCapCharacters"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/totalVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/descriptionTil"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/textview_background"
+                        app:boxBackgroundMode="none"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/totalVideoCount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Today Total Video Number (0)"
+                            android:inputType="textMultiLine|textCapCharacters"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/Session"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/totalVideo"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/textview_background"
+                        app:boxBackgroundMode="none"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/instructorName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Instructor Name"
+                            android:inputType="textMultiLine|textCapCharacters"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/UpdateModuleBtn"
+                android:text="Updated Module"
+                android:textColor="@color/white"
+                android:layout_below="@+id/Session"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#115B8D"
+                android:background="@drawable/shape_button"
+                ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

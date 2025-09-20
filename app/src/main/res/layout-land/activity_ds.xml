@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_10" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/images"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+
+                    <EditText
+                        android:id="@+id/search_Et"
+                        android:layout_width="match_parent"
+                        android:layout_height="62dp"
+                        android:layout_below="@+id/images"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:hint="Search"
+                        android:padding="10dp"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:background="@drawable/card_shape"
+                        ></EditText>
+
+
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addUploadedcategoryBtn"
+                        android:text="Upload Module Number"
+                        android:textColor="@color/white"
+                        android:layout_alignParentBottom="true"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:backgroundTint="#115B8D"
+                        android:background="@drawable/shape_button"
+                        ></androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/gradient_shape2"
+                >
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <!-- Right Section (Form & Button) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_shape2"
+            android:padding="20dp">
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/category_List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/row_video_day_admin"
+                android:layout_above="@+id/addUploadedcategoryBtn"
+                android:layout_below="@+id/search_Et"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

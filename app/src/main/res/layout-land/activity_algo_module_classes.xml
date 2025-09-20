@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/white"
+    tools:context=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.Algorithm.AlgoModuleClasses">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_10" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/images"
+                android:padding="16dp"
+                android:text="Check if the uploaded Google Drive link is working properly. Ensure that the video does not exceed 20-25 minutes. Are you sure this is your 20th class or below?"
+                android:textAlignment="center"
+                android:textColor="#DF1D43"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/gradient_shape2"
+                >
+            </View>
+
+        </RelativeLayout>
+
+
+
+        <!-- Right Section (Form & Button) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/gradient_shape2"
+            android:padding="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/titleTil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_below="@+id/TextViewEdit"
+                        android:background="@drawable/textview_background"
+                        app:boxBackgroundMode="none"
+
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/googleDriveLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Google Drive Link "
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/classNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/titleTil"
+                        android:background="@drawable/textview_background"
+                        app:boxBackgroundMode="none"
+                        app:hintEnabled="false">
+
+                        <EditText
+                            android:id="@+id/ClassNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:drawablePadding="10dp"
+                            android:hint="Class - 1"
+                            android:textAllCaps="false"
+                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <!-- Add Drive Link Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AddClassDriveLink"
+                android:text="Add Drive Link"
+                android:textColor="@color/white"
+                android:layout_below="@+id/scrrling"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="75dp"
+                android:backgroundTint="#115B8D"
+                android:background="@drawable/shape_button"
+                ></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

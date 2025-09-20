@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".dashboardadmin.videoSection.videoUploadAdmin.mainCourse.CPlusProgramming.CppproggramingModuleClass">
+
+    <ImageButton
+        android:id="@+id/backBtnnc"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="backButton"
+        android:padding="0dp"
+        android:src="@drawable/baseline_arrow_back_24"></ImageButton>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-250dp"
+        android:background="@drawable/gradient_shape2"
+        >
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoTitle"
+        android:text="Video Title"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module Name"
+        android:id="@+id/moduleNamee"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/videoTitle"
+        android:layout_centerHorizontal="true"
+        >
+    </TextView>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/InstructorName"
+        android:layout_below="@+id/moduleNamee"
+        android:text="Instructor"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lineee"
+        android:text="--------------------------------------------------------"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/InstructorName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"></TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addingCls"
+        android:text="Add Class"
+        android:textColor="@color/white"
+        android:layout_below="@+id/lineee"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/card_shape"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addingCls"
+        android:id="@+id/addingclassRecyclerView"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/row_class"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

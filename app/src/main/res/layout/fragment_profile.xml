@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativ"
+        >
+        <ImageView
+            android:id="@+id/profileCover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_10" />
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profileCover"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="User Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/user_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="user@example.com"
+            android:textSize="16sp"
+             />
+
+
+        <TextView
+            android:id="@+id/user_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_email"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="userType"
+            android:textSize="16sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:backgroundTint="#1B4866"
+            android:layout_marginHorizontal="40dp"
+
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_button"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:id="@+id/viewsss"
+        android:background="@drawable/gradient_shape2">
+
+    </View>
+</RelativeLayout>

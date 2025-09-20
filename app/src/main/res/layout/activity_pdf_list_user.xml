@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboarduser.PdfListUserActivity"
+    >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Books"
+        android:textColor="@color/white"
+        android:textStyle="bold"></TextView>
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="76dp"
+        android:layout_height="55dp"
+        android:contentDescription="BackBtn"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:text="back"
+        android:textStyle="bold|italic"></ImageButton>
+
+    <TextView
+        android:id="@+id/sub_title_tv"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_centerHorizontal="true"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"></TextView>
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-250dp"
+        android:background="@drawable/gradient_shape2"
+        >
+    </View>
+
+<!--    <TextView-->
+<!--        android:id="@+id/"-->
+<!--        android:layout_width="225dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/title_tv"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Category"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#1B4866"-->
+<!--        android:layout_marginTop="160dp"-->
+<!--        android:textSize="48sp"-->
+<!--        android:textStyle="bold"></TextView>-->
+
+
+    <EditText
+        android:id="@+id/search_Et"
+        android:layout_width="402dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/sub_title_tv"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="175dp"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:background="@drawable/card_shape"
+        android:layout_marginHorizontal="20dp"
+
+        ></EditText>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_Et"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        tools:listitem="@layout/row_pdf_user"></androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

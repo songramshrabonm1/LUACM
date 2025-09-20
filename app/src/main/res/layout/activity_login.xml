@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.LoginActivity">
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backButtonLogin"
+        android:text="back"
+        android:visibility="gone"
+        ></Button>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/images"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"></ImageView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_shape2"
+        android:layout_marginTop="150dp">
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="145dp"
+        android:id="@+id/linear"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello...."
+            android:textStyle="bold"
+            android:textSize="85sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+
+
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc"
+        android:layout_below="@+id/linear">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginVertical="32dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center">
+
+
+
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_id"
+                android:inputType="textEmailAddress"
+                android:hint="Email Id"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:background="@drawable/rounded_corner"
+                android:padding="16dp"
+                android:layout_marginTop="12dp"
+                />
+
+
+
+            <ProgressBar
+                android:layout_width="24dp"
+                android:layout_height="64dp"
+                android:id="@+id/progress_bar"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogin"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_below="@+id/sc"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#115B8D"
+        android:background="@drawable/shape_button"
+        ></androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonLogin"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Don't have an account? "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/newUserId"
+            android:text="Sign Up"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/forgetPasword"
+            android:text="Forget Password"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

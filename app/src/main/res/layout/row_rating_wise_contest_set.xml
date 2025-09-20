@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    app:cardBackgroundColor="@android:color/transparent"
+
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp"
+
+
+    >
+
+<!--    app:cardBackgroundColor="#360B53"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_marginEnd="5dp"
+            android:background="#19A09A9A"
+
+            >
+
+            <ImageView
+                android:id="@+id/ProbleSolvingPlatformImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+            </ImageView>
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/Rating"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:layout_marginTop="23dp"
+            android:textColor="@color/white"
+            android:text="Rating - "
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/VjudgePassword"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Rating"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:text="Password : "
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/DeivisionName"
+            style="@style/TextAppearance.MaterialComponents.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/VjudgePassword"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/pdfRl"
+            android:textColor="@color/white"
+            android:text="Contest Link - "></TextView>
+
+
+
+        <ImageButton
+            android:id="@+id/deleteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            ></ImageButton>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editIcon"
+            android:src="@drawable/baseline_edit_24"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/deleteIcon"></ImageButton>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
