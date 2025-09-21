@@ -5,10 +5,6 @@ It helps students with academic and co-curricular resources such as previous sem
 
 ---
 
-## App Working 
-
-<video src = "perfect (1) (1) (1) (1).mp4">
-
 ## ✨ Features
 
 - 🔍 **Previous Semester Questions**  
