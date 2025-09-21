@@ -11,8 +11,8 @@ It helps students with academic and co-curricular resources such as previous sem
   Students can search and access previous semester question papers (uploaded by Admin).  
 
 
-<image src = "previousQstn.png" width = '100'>
-<image src = "qstn.png" width = '100'>
+<image src = "previousQstn.png" width = '200'>
+<image src = "qstn.png" width = '200'>
 
 
 
@@ -28,18 +28,18 @@ It helps students with academic and co-curricular resources such as previous sem
   Contest problem-solving discussions and solutions (Codeforces, CodeChef, etc.). 
 
 
-<image src = 'home.png' width = '100' >
-<image src = 'home2.png' width = '100'>
-<image src = "module.png" width = '100'>
-<image src = "moduleClass.png" width = '100'>
-<image src = "exoplayer.png" width = '100'>
+<image src = 'home.png' width = '200' >
+<image src = 'home2.png' width = '200'>
+<image src = "module.png" width = '200'>
+<image src = "moduleClass.png" width = '200'>
+<image src = "exoplayer.png" width = '200'>
 
 - 📘 **Practice Problem Integration**  
   Admin can provide **vJudge problem lists** (with links and passwords if needed).  
   Students can directly practice problems related to the topics they just learned from videos.  
 
-<image src = 'problemsolve.png' width = '100'>
-<image src = 'codeforcesss.png' width = '100'>
+<image src = 'problemsolve.png' width = '200'>
+<image src = 'codeforcesss.png' width = '200'>
 <image src = 'rating.png' width = '100'>
 
 
@@ -53,8 +53,8 @@ It helps students with academic and co-curricular resources such as previous sem
 - 📅 **Routine Upload**  
   CR/Admin can upload and update class routines.  
 
-<image src = 'freeclass.png' width = '100'>
-<image src = 'freeclass copy.png' width = '100'>
+<image src = 'freeclass.png' width = '200'>
+<image src = 'freeclass copy.png' width = '200'>
 
 
 - 🔐 **Authentication System**  
@@ -62,8 +62,8 @@ It helps students with academic and co-curricular resources such as previous sem
   - Students must verify email after signup.  
   - Only verified users can log in and access app features.  
 
-<image src = 'loginn.png' width = 100>
-<image src = 'signupp.png' width = 100>
+<image src = 'loginn.png' width = "200">
+<image src = 'signupp.png' width = "200">
 
 - 👨‍💼 **Role-based Access**  
   - **Admin**: Full control (upload videos, vJudge lists, questions, routines, add students, assign CR).  
@@ -72,8 +72,8 @@ It helps students with academic and co-curricular resources such as previous sem
   **Student**: After verification, can access all sections.  
 
 
-<image src = 'account.png' width = 100>
-<image src = 'accountlist.png' width = 100>
+<image src = 'account.png' width = "200">
+<image src = 'accountlist.png' width = "100">
 <br>
 
 
