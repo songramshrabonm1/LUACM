@@ -5,6 +5,12 @@ It helps students with academic and co-curricular resources such as previous sem
 
 ---
 
+## Demo Video As a Admin 
+https://github.com/user-attachments/assets/bc887511-34fb-4559-a500-da03e0095f84
+
+---
+
+
 ## ✨ Features
 
 - 🔍 **Previous Semester Questions**  
